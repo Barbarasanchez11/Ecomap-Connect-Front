@@ -18,8 +18,8 @@ console.log(customIcon)
 
 const MyMap = () => {
   return (
-    <>
-    <MapContainer center={[40.7128, -74.006]} zoom={13} style={{ height: "500px", width: "100%" }}>
+    <main>
+        <MapContainer center={[40.7128, -74.006]} zoom={13} style={{ height: "500px", width: "100%" }}>
       {/* Capa base de OpenStreetMap */}
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
 
@@ -28,7 +28,7 @@ const MyMap = () => {
         <Popup>¡Hola! Este es un marcador en Nueva York.</Popup>
       </Marker>
     </MapContainer>
-    </>
+    </main>
   );
 };
 
