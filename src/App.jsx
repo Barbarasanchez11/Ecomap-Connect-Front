@@ -19,10 +19,10 @@ const [message,setMessage] = useState('')
   }, []);
 
   return (
-    <div>
+    <>
       <MyMap />
-      <p>hola</p>
-    </div>
+      
+    </>
   );
 }
 
